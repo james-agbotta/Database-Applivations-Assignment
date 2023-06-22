@@ -1,0 +1,4 @@
+CREATE TABLE [dbo].[editorID]
+(
+  [Id] INT NOT NULL PRIMARY KEY
+)
