@@ -3,8 +3,7 @@ ID int IDENTITY(10000000,1) NOT NULL PRIMARY KEY,
 first_name NVARCHAR(60) NOT NULL,
 last_name NVARCHAR(60) NOT Null,
 lastLogin DATETIME NOT NULL,
-userpassword NVARCHAR(15) NOT NULL CHECK (userpassword LIKE '%[A-Z]%' AND userpassword LIKE '%[a-z]%' AND userpassword LIKE '%[0-9]%' AND LEN(userpassword) >= 8),
-
+userpassword NVARCHAR(15) 
 );
 
 INSERT INTO dbo.usertb (first_name, last_name, lastLogin, userpassword)
@@ -25,7 +24,3 @@ VALUES
   ('Ava', 'White', '2023-06-04 22:10:33', 'Pwd789!'),
   ('Alexander', 'Turner', '2023-06-19 03:51:14', 'Secret123Pwd');
 
-
---Select all 
---SELECT ID, first_name, last_name, Convert(NVARCHAR(120), lastlogin)
- -- FROM dbo.usertb;

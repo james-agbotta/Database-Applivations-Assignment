@@ -7,4 +7,5 @@ CREATE TABLE [dbo].[commentstb]
   [commentDate] DATETIME  NOT NULL, 
 
   Foreign Key (userID) REFERENCES [dbo].[usertb](ID)
+  
 )
